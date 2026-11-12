@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Editor1506Activity" android:exported="false" android:label="@string/title_1506" />
+        <activity android:name=".ui.VanillaActivity" android:exported="false" android:label="@string/title_vanilla" />
+        <activity android:name=".ui.HexViewerActivity" android:exported="false" android:label="@string/title_hex" />
+        <activity android:name=".ui.SearchActivity" android:exported="false" android:label="@string/title_search" />
+        <activity android:name=".ui.CompareActivity" android:exported="false" android:label="@string/title_compare" />
+        <activity android:name=".ui.BatchActivity" android:exported="false" android:label="@string/title_batch" />
+    </application>
+</manifest>
