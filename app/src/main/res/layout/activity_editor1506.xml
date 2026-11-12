@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <Button android:id="@+id/btnLoadOrig" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="تحميل 1506 الأصلي" />
+        <TextView android:id="@+id/txtOrig" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="6dp" />
+        <Button android:id="@+id/btnLoadTgt" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="تحميل 1506 التارجت" />
+        <TextView android:id="@+id/txtTgt" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="البريسيت:" android:labelFor="@+id/spPreset" android:paddingTop="10dp" />
+        <Spinner android:id="@+id/spPreset" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="الأوفسيت (هيكس):" android:labelFor="@+id/edOffset" />
+        <EditText android:id="@+id/edOffset" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="text" android:hint="01A000" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="الطول (بايت):" android:labelFor="@+id/edLength" />
+        <EditText android:id="@+id/edLength" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="number" android:hint="16" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="قيمة الأيدي (هيكس):" android:labelFor="@+id/edValue" />
+        <EditText android:id="@+id/edValue" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="text" android:minLines="2" />
+
+        <Button android:id="@+id/btnReadOrig" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="قراءة أيدي الأصلي" />
+        <Button android:id="@+id/btnReadTgt" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="قراءة أيدي التارجت" />
+
+        <CheckBox android:id="@+id/chkRepair" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="إصلاح SPHE CRC بعد النسخ" android:checked="true" />
+        <CheckBox android:id="@+id/chkBackup" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="عمل نسخة احتياطية" android:checked="true" />
+        <CheckBox android:id="@+id/chkVerify" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="التحقق من الملف بعد الحفظ" android:checked="true" />
+
+        <Button android:id="@+id/btnCopySave" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="نسخ الأيدي من الأصلي للتارجت وحفظ" android:paddingTop="8dp" />
+        <Button android:id="@+id/btnAddPatch" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="إضافة الأوفسيت والقيمة الحالية لقائمة الباتشات" />
+
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="10dp" android:textSize="16sp"
+            android:accessibilityLiveRegion="polite" />
+    </LinearLayout>
+</ScrollView>
