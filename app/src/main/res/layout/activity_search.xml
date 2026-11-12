@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="المصدر:" android:labelFor="@+id/spSource" />
+    <Spinner android:id="@+id/spSource" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="الوضع:" android:labelFor="@+id/spMode" />
+    <Spinner android:id="@+id/spMode" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <CheckBox android:id="@+id/chkCase" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="تمييز الحروف الكبيرة والصغيرة" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="الاستعلام:" android:labelFor="@+id/edQuery" />
+    <EditText android:id="@+id/edQuery" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Button android:id="@+id/btnSearch" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="بحث" />
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite" />
+</LinearLayout>
