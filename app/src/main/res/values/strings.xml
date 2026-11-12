@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مغيّر الأيدي</string>
+    <string name="title_1506">محرر أيدي 1506</string>
+    <string name="title_vanilla">أدوات فانيلا</string>
+    <string name="title_hex">عارض الهيكس</string>
+    <string name="title_search">بحث</string>
+    <string name="title_compare">مقارنة سوفتين</string>
+    <string name="title_batch">قائمة الباتشات</string>
+</resources>
