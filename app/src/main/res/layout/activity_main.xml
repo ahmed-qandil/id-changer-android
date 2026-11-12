@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="مغيّر الأيدي - نسخة 1.0"
+        android:textSize="22sp" android:paddingBottom="8dp" />
+    <ListView android:id="@+id/menu"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <Button android:id="@+id/btnTree"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="اختيار مجلد الحفظ" />
+    <TextView android:id="@+id/txtState"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="8dp" android:textSize="14sp"
+        android:accessibilityLiveRegion="polite" />
+</LinearLayout>
